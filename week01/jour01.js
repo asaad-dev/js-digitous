@@ -18,6 +18,20 @@
 // food = food.replace("meh", "so good");
 // console.log(food);
 
-// 06- Up and Down
-var basic = "This is Cool";
+// // 06- Up and Down
+// var basic = "This is Cool";
+// var basicUp = basic.toUpperCase();
+// var basicDown = basic.toLowerCase();
+// console.log(basic, basicUp, basicDown);
 
+// // 07 - Split
+// var word = "banana";
+// var letters = word.split("");
+// console.log(letters);
+
+// // 08 - Template
+// var age = 32;
+// var template = `I'm ${age} years old`;
+// console.log(template);
+
+//? Bonus
