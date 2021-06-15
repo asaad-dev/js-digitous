@@ -35,26 +35,60 @@
 // console.log(test != bis);
 // console.log(test !== bis);
 
-// 06 - Condition
-var limit = 50;
-var score = 64;
-if (score >= limit) {
-    console.log('Ok good !');
+// // 06 - Condition
+// var limit = 50;
+// var score = 64;
+// if (score >= limit) {
+//     console.log('Ok good !');
+// } else {
+//     console.log('Oh noo...');
+// }
+
+// // 07 - Condition II
+// var password = "azerty";
+// if (password > 5) {
+//     console.log("The password is secure");
+// }
+
+// // 08 - Condition III
+// if (score >= limit && password > 5) {
+//     console.log("Everything is good");
+// } else if (score >= limit || password > 5) {
+//     console.log("Something is good");
+// } else {
+//     console.log("Nothing is good");
+// }
+
+//? Bonus
+var random = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+if (random === 6) {
+    console.log("Yes I win");
 } else {
-    console.log('Oh noo...');
+    console.log("So close...");
 }
 
-// 07 - Condition II
-var password = "azerty";
-if (password > 5) {
-    console.log("The password is secure");
+//? Bonus II
+var month = "April";
+
+switch (month) {
+    case "January": 
+		console.log("Winter");
+		break;
+	case "April": 
+		console.log("Spring");
+		break;
+	case "July": 
+		console.log("Summer");
+		break;
+	default: 
+		console.log("Fall...");
 }
 
-// 08 - Condition III
-if (score >= limit && password > 5) {
-    console.log("Everything is good");
-} else if (score >= limit || password > 5) {
-    console.log("Something is good");
+//? Bonus III
+var roundedNumber = 3.3;
+if (roundedNumber <= 4) {
+    console.log(Math.ceil(roundedNumber));
 } else {
-    console.log("Nothing is good");
+    console.log(Math.floor(roundedNumber));
 }
+
