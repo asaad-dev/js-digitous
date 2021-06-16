@@ -76,11 +76,17 @@
 // }
 
 
-//? Bonus II
-var total = 0;
-var limit = 10;
-while (total <= limit) {
-    total++;
-    console.log(total);
-}
+// //? Bonus II
+// var total = 0;
+// var limit = 10;
+// while (total <= limit) {
+//     total++;
+//     console.log(total);
+// }
+
+
+//? Bonus III
+var promo5 = ["Kévin", "Laura", "Emran", "Elodie", "Anthony", "Eliott", "Andy", "Amar", "Art", "Baydir", "Julien", "Victor", "Yangchen", "Asaad"];
+var nom = promo5[Math.floor(Math.random() * promo5.length)];
+console.table(nom);
 
