@@ -46,7 +46,7 @@
 
 // // 07 - Condition II
 // var password = "azerty";
-// if (password > 5) {
+// if (password.length > 5) {
 //     console.log("The password is secure");
 // }
 
@@ -60,11 +60,12 @@
 // }
 
 //? Bonus
+// var  random = Math.floor(Math.random() * 6) + 1;
 var random = Math.floor(Math.random() * (6 - 1 + 1) + 1);
 if (random === 6) {
-    console.log("Yes I win");
+    console.log(random, "Yes I win");
 } else {
-    console.log("So close...");
+    console.log(random, "So close...");
 }
 
 //? Bonus II
@@ -85,10 +86,23 @@ switch (month) {
 }
 
 //? Bonus III
-var roundedNumber = 3.3;
-if (roundedNumber <= 4) {
+var roundedNumber = 12.3;
+if (roundedNumber % 1 >= 0.5) {
     console.log(Math.ceil(roundedNumber));
 } else {
     console.log(Math.floor(roundedNumber));
 }
 
+// var str = roundedNumber.toString().split(".")[1];
+// console.log(str);
+
+var str = roundedNumber.toString()
+
+var decimal = str.substring(str.indexOf("."));
+console.log(decimal);
+
+if (decimal >= 5) {
+    console.log(Math.ceil(roundedNumber));
+} else {
+    console.log(Math.floor(roundedNumber));
+}
