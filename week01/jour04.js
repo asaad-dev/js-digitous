@@ -48,16 +48,15 @@
 
 
 // 04 - Compare
-var comparedNum = "";
-function compare(sum1, sum2) {
-    if(num1 > comparedNum) {
-        console.log("sum1 is bigger");
-    } else if(num2 > comparedNum) {
-        console.log("sum2 is bigger");
-    } else if (sum1 === sum2) {
-        console.log("both are the same");
+function compare(num1, num2) {
+    if(num1 > num2) {
+        console.log("num1 is bigger");
+    } else if(num2 > num1) {
+        console.log("num2 is bigger");
     } else {
-        console.log();
+        console.log("both are the same");
     }
 }
-console.log(compare(10, 20));
+console.log(compare(20, 20));
+
+// 05 - Add up
