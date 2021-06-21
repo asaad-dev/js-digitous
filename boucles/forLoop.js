@@ -19,6 +19,14 @@
 // var entier = entierAleatoire(1, 20);
 // console.log(entier);
 
+// //Autre métode
+// var dé;
+
+// dé = Math.floor(Math.random() * 20)+1;
+
+// console.log(dé);
+
+
 
 // // 4- Des boites
 // results = 10, 34, 17;
