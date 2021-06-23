@@ -1,13 +1,11 @@
-//  Exo : 01
+// Import Node.JS
 console.log(process.argv);
 
-function calculate(number1, operator, number2) {
-  
-    // // declaration of the variables.  
-    // let number1 = 5;
-    // let number2 = 4;
-    // let operator = '*';
+// Import Internal files
+import "table-utils.js";
 
+//  Exo : 01
+function calculate(number1, operator, number2) {
     if (operator == '+') {  
     result = number1 + number2; 
     }  else if (operator == '-') {  
@@ -17,17 +15,17 @@ function calculate(number1, operator, number2) {
     }  else {  
     result = number1 % number2;  
     }  
-
-    // console.log(parseInt(process.argv[0]) * parseInt(process.argv[1]));
-    // console.log("Result is " + result);  
-
 }
 
-(calculate());
+// (calculate(5, '*', 4));
+// console.log(result);
+
+// console.log(parseInt(process.argv[2]) * parseInt(process.argv[4]));
 
 
 
-// //Exo : 02
-// function multiply() {
+//  Exo : 02
+addition();
 
-// }
+
+//  Exo : 03

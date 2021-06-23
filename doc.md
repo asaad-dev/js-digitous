@@ -43,9 +43,8 @@
     * .keys()
     * .values()
     * .entries()
-#### Fonction fléchée => Arrow ?
+#### Fonction fléchée ? ```Arrow```
 
 #### Fonction imbarqueée ?
 * Les fonctions servent à effectuer des actions. On peut grouper du code à l'intérieur de fonctions pour découper la logique en morceaux identifiables et cohérents. 
-
 
