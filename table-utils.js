@@ -8,6 +8,9 @@ function multiply() {
     }
 }
 
+// multiply();
+
+
 
 // Function Addition 
 function addition() {
@@ -19,4 +22,4 @@ function addition() {
     }
 }
 
-addition();
+// addition();

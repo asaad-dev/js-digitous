@@ -2,30 +2,51 @@
 console.log(process.argv);
 
 // Import Internal files
-import "table-utils.js";
+// require ("table-utils.js");
 
 //  Exo : 01
-function calculate(number1, operator, number2) {
+function calculateTest(num1, operator, num2) {
     if (operator == '+') {  
-    result = number1 + number2; 
+    result = num1 + num2; 
     }  else if (operator == '-') {  
-    result = number1 - number2;  
+    result = num1 - num2;  
     }  else if (operator == '*') { 
-    result = number1 * number2;  
+    result = num1 * num2;  
     }  else {  
-    result = number1 % number2;  
+    result = num1 % num2;  
     }  
+
+    // (calculate(5, '*', 4));
+    // console.log(result);
+    // console.log(parseInt(process.argv[2]) * parseInt(process.argv[4]));
 }
 
-// (calculate(5, '*', 4));
-// console.log(result);
+function calculate() {
+    if(parseInt(process.argv[2]) * parseInt(process.argv[4])) {
+        console.log(parseInt(process.argv[2]) * parseInt(process.argv[4]));
+    } else {
+        console.log("error !");
+    }
+}
 
-// console.log(parseInt(process.argv[2]) * parseInt(process.argv[4]));
-
+calculate();
 
 
 //  Exo : 02
-addition();
+function multiply() {
+    let chiffreSaisi = parseInt(process.argv[2]);
+
+    for (var i = 1; i <= 10; i++){
+        var resultat = chiffreSaisi * i;
+        console.log(chiffreSaisi + " * " + i + " = " + resultat);
+    }
+}
+
+// multiply();
 
 
 //  Exo : 03
+// addition();
+
+
+//  Exo : 04
