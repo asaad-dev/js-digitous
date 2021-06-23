@@ -1,7 +1,7 @@
 # Basic JS
-[Zen devs - Articles] (https://www.zendevs.xyz/categorie/javascript/).
-[JavaScript Zéro - Vidéo] (https://www.youtube.com/c/JavaScriptdeZ%C3%A9ro/playlists).
-[Exercices JS - Interactifs] (http://odyssey.sdlm.be/).
+* [Zen devs - Articles] (https://www.zendevs.xyz/categorie/javascript/).
+* [JavaScript Zéro - Vidéo] (https://www.youtube.com/c/JavaScriptdeZ%C3%A9ro/playlists).
+* [Exercices JS - Interactifs] (http://odyssey.sdlm.be/).
 
 ## Jour 01
 
@@ -43,7 +43,7 @@
     * .keys()
     * .values()
     * .entries()
-#### Fonction fléchée ? ```Arrow```
+#### Fonction fléchée ? ```Arrow Function```
 
 #### Fonction imbarqueée ?
 * Les fonctions servent à effectuer des actions. On peut grouper du code à l'intérieur de fonctions pour découper la logique en morceaux identifiables et cohérents. 

@@ -1,8 +1,9 @@
-// Import Node.JS
+// Imports
 console.log(process.argv);
+var prompt = require("prompt");
 
 // Import Internal files
-require ("table-utils.js");
+// require ("table-utils.js");
 
 
 //  Exo : 01
@@ -51,3 +52,30 @@ function multiply() {
 
 
 //  Exo : 04
+
+var mysteryNum  = (Math.floor(Math.random() * (100 - 1)) +1);
+// console.log(mysteryNum);
+
+prompt.start();  // démarre le prompt
+
+function play() {
+
+    function displayPrompt() {
+        prompt.get({ 
+            description: "Quel est le nombre mystère ?",
+            validator: /^[1-9]\d*$/,
+            
+        }, 
+        function (err, mysteryNum) { 
+          if (mysteryNum < 10) { 
+            console.log("C'est plus !");
+          } else {
+            displayPrompt(); // relance le prompt si la saisie n'est pas valide
+          }
+        });
+      }
+
+    //   displayPrompt();
+}
+
+play(mysteryNum);
