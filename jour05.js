@@ -2,7 +2,8 @@
 console.log(process.argv);
 
 // Import Internal files
-// require ("table-utils.js");
+require ("table-utils.js");
+
 
 //  Exo : 01
 function calculateTest(num1, operator, num2) {
@@ -29,7 +30,7 @@ function calculate() {
     }
 }
 
-calculate();
+// calculate();
 
 
 //  Exo : 02
