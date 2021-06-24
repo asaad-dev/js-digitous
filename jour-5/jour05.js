@@ -61,21 +61,38 @@ prompt.start();  // démarre le prompt
 function play() {
 
     function displayPrompt() {
-        prompt.get({ 
+        prompt.get(
+        { 
+            name: 'q',
             description: "Quel est le nombre mystère ?",
             validator: /^[1-9]\d*$/,
-            
+            replace: mysteryNum,
+            required: true,
+            before: function() {
+                return 'Le mystère nombre est : ' +  mysteryNum;
+            }
         }, 
-        function (err, mysteryNum) { 
-          if (mysteryNum < 10) { 
-            console.log("C'est plus !");
-          } else {
-            displayPrompt(); // relance le prompt si la saisie n'est pas valide
-          }
+
+        function (err, res) { 
+            if (res.q === mysteryNum) { 
+                console.log("Bravo !");
+            } else if (res.q < 5) {
+                console.log("C'est plus !");
+            } else if (res.q > 100) {
+                console.log("C'est moins !");
+            } else {
+                // displayPrompt(); 
+            }
         });
       }
 
-    //   displayPrompt();
+    //   console.log("Données reçues :");
+    //   console.log("=> Username : " + res.username);
+
+      displayPrompt();
 }
 
-play(mysteryNum);
+play();
+
+
+//? Bonus
