@@ -74,6 +74,7 @@ function play() {
         }, 
 
         function (err, res) { 
+            res.num = parseInt(res.q)
             if (res.q === mysteryNum) { 
                 console.log("Bravo !");
             } else if (res.q < 5) {
