@@ -4,7 +4,7 @@
 //
 // Function declaration
 //
-console.log("======= Function declaration ======");
+console.log(`============ Function Declaration ============`);
 
 function multiply(num) {
   return num * num;
@@ -18,7 +18,7 @@ console.log(multiply(age));
 //
 // Scope
 //
-console.log("======= Scope ======");
+console.log(`============ Scope ============`);
 
 var global = "hey !";
 

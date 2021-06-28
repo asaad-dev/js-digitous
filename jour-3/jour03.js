@@ -88,5 +88,5 @@
 //? Bonus III
 var promo5 = ["Kévin", "Laura", "Emran", "Elodie", "Anthony", "Eliott", "Andy", "Amar", "Art", "Baydir", "Julien", "Victor", "Yangchen", "Asaad"];
 var nom = promo5[Math.floor(Math.random() * promo5.length)];
-console.table(nom);
+// console.table(nom);
 

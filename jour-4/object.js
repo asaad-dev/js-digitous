@@ -3,7 +3,7 @@
 var user = {
     name: "Asaad",
     genre: "m",
-    age: "33",
+    age: "32",
     isStudent:  true,
     favorites: ["coffee", "nutella", "pizza"]
   };
@@ -12,7 +12,7 @@ var user = {
   //
   // Accéder aux valeurs d'un objet
   //
-  console.log("======= Accéder aux valeurs d'un objet ======");
+  console.log(`============ Accéder aux valeurs d'un objet ============`);
   
   console.log(user);
   //  01
@@ -26,7 +26,7 @@ var user = {
   //
   
   // 1- Assign
-  console.log("======= Assign - Method ======");
+  console.log(`============ Assign - Method ============`);
   
   var user = {
     name: "Peter",
@@ -44,7 +44,7 @@ var user = {
   
   
   // 2- HasOwnroperty
-  console.log("======= HasOwnroperty - Method ======");
+  console.log(`============ HasOwnProperty - Method ============`);
   
   var cat = {
     name: "Pickle",
@@ -56,21 +56,21 @@ var user = {
   
   
   // 3- Key
-  console.log("======= Key - Method ======");
+  console.log(`============ Key - Method ============`);
   
   Object.keys(cat);
   console.log(cat);
   
   
   // 3- Values
-  console.log("======= Values - Method ======");
+  console.log(`============ Values - Method ============`);
   
   //? Something wrong here
   Object.values(cat);
   console.log(cat);
   
   // 3- Entries
-  console.log("======= Entries - Method ======");
+  console.log(`============ Entries - Method ============`);
   
   //Object.entries(a);
   console.log(cat);

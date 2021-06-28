@@ -11,7 +11,6 @@ function multiply() {
 // multiply();
 
 
-
 // Function Addition 
 function addition() {
     let chiffreSaisi = parseInt(process.argv[2]);

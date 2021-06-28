@@ -18,7 +18,7 @@
 // La boucle `for` est utilisée lorsqu'on connaît le nombre d'étapes (itérations) nécessaires : 
 //  * on programme la boucle pour tourner `x` fois.
 
-console.log("======= For Loop ======");
+console.log(`============ For Loop ============`);
 
 var goal = 10;
 
@@ -31,7 +31,7 @@ for (var i = 0; i <= goal; i++) {
 // Break & Continue
 //   
 
-console.log("======= Break & Continue ======");
+console.log(`============ Break & Continue ============`);
 
 var menu = ["salad", "burger", "cheese", "dessert", "coffee"];
 
@@ -51,7 +51,7 @@ if (menu[i] === "coffee") {
 // Récursivité
 //
 
-console.log("======= Récursivité ======");
+console.log(`============ Récursivité ============`);
 
 function countDown(num) {
   if (num === 0) {
