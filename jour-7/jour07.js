@@ -33,9 +33,9 @@ var longNames = [
 	}
 ];
 
-let shortNames = longNames.map(obj => {
-    resObj = {name: obj.firstName + " " + obj.lastName};
-    return resObj;
+let shortNames = longNames.map(user => {
+    resUser = {name: `${user.firstName} ${user.lastName}`};
+    return resUser;
 });
 
 // console.log(shortNames);
@@ -89,3 +89,4 @@ var  cakes = [
 		status: "available"
 	},
 ]
+
