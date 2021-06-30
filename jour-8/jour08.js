@@ -4,28 +4,47 @@ var axios = require('axios');
 var prompt = require("prompt");
 
 
-axios.get("https://restcountries.eu/rest/v2/all").then(function (getCountries) {
-    // console.log(getCountries);
-    var countriesNames = [];
-    countriesNames = getCountries.countriesNames;
-    // console.log("country -", + countriesNames.name);
-},);
+let countriesNames = [];
 
+function getCountries() {
+	axios.get("https://restcountries.eu/rest/v2/all").then((res) => {
+		let countries = res.data;
+
+		countriesNames = countries.map(function (country) {
+			return country.name;
+		});
+
+		console.log(countriesNames.join("-"));
+	});
+}
+
+getCountries();
 
 
 // Exo : 02
-axios.get("https://api.chucknorris.io/jokes/random").then(function (getFact) {
-    prompt.start();
 
-    function displayPrompt() {
-    prompt.get({ Joke: "hi, tell me a joke", getFact }, function (err, result) {
-        if (err) {
-            return onErr(err);
-        }
-        console.log(result.getFact);
-    });
+function getFact() {
+	axios.get("https://api.chucknorris.io/jokes/random").then((res) => {
+		let fact = res.data;
+
+		console.log(fact.value);
+	});
 }
-displayPrompt();
-});
+
+getFact();
+
 
 // Exo : 03
+
+function catchPokemon(id, lang) {
+	axios.get(`https://pokeapi.co/api/v2/pokemon-species/${id}`).then((res) => {
+		let pokemon = res.data;
+		let translatedName = pokemon.names.find((element) => {
+			return element.language.name === lang;
+		});
+
+		console.log(`Mon pokemon numéro ${pokemon.id} s'appelle: ${translatedName.name}`);
+	});
+}
+
+catchPokemon(1, "fr");
